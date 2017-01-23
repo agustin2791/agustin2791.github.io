@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="JandSon" ng-controller="GeneralCtrl">
+  <head>
+    <meta charset="utf-8">
+    <title>J &amp; Son Marine</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" name="button">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/" ng-show="mobileScreen"><img src="images/JandSonLogo.png" class="logo-small" alt="J and Son Logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/work">Work</a></li>
+            <li ng-show="desktopScreen"><a href="#/"><img src="images/JandSonLogo.png" class="logo-middle" alt="J and Son Logo"></a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div ng-view></div>
+    <footer>
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+              <div class="col-md-6 footer-left">
+                <h5>&copy; {{date | date:'yyyy'}} | J and Son Marine</h5>
+                <a href="https://www.facebook.com/jandsonmarine/" target="_blank"><span class="fa fa-facebook fa-2x"></span></a> <a href="https://www.instagram.com/jandsonmarine/?hl=en" target="_blank"><span class="fa fa-instagram fa-2x"></span></a>
+              </div>
+              <div class="col-md-6 footer-right">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>J &amp; Son Marine</h4>
+                    <p>(619) 757-84499<br>Jared@JandSonMarine.com<br>8319 Glen Vista Ct.<br>San Diego, CA 92114</p>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <img src="images\JandSonLogo-white-small.png" style="width:100%" alt="Logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
