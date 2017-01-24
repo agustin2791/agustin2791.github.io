@@ -83,13 +83,12 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   border-radius: 3px;
   text-align: right;
   color: #34495e;
-
-}
-.work h1 {
-  color: #9b59b6;
-}
-.work ul {
-  list-style-type: none;
+  h1 {
+    color: #9b59b6;
+  }
+  ul {
+    list-style-type: none;
+  }
 }
 hr {
   border-top: #34495e thin solid;
@@ -102,9 +101,15 @@ hr {
   margin-top: 50px;
   text-align: center;
   font-size: 26px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project-show {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #about {
   background: url(/images/city.jpg);
@@ -131,6 +136,8 @@ hr {
   background: url(/images/dog.jpg);
   background-size: 100%;
   background-attachment: fixed;
+  height: 100%;
+  position: relative;
 }
 .return {
   width: 80px;

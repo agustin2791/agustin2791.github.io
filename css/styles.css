@@ -105,12 +105,17 @@ hr {
   padding: 50px;
   border: solid 3px #fff;
   border-radius: 3px;
-  margin-top: 50px;
   text-align: center;
   font-size: 26px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project-show {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #about {
   background: url(/images/city.jpg);
@@ -137,6 +142,8 @@ hr {
   background: url(/images/dog.jpg);
   background-size: 100%;
   background-attachment: fixed;
+  height: 100%;
+  position: relative;
 }
 .return {
   width: 80px;
